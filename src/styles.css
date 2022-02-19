@@ -1,0 +1,63 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  text-align: center;
+}
+.backButton {
+  display: inline-block;
+  background: #756dbd;
+  border-radius: 25px;
+  color: white;
+
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.h2Position {
+  text-align: left;
+}
+
+.topnav {
+  background-color: #756dbd;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: overlay;
+  /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.topNavText {
+  color: white;
+  align-items: center;
+  overflow-y: overlay;
+  overflow: auto;
+}
+
+.p1 {
+  font-size: 48px;
+  font: bold;
+  color: #756dbd;
+}
+
+@media (max-width: 576px) {
+  .p1 {
+    font-size: medium;
+  }
+
+  .a1 {
+    font-size: large;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+}

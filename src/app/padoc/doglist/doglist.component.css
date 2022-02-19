@@ -1,0 +1,38 @@
+.center {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+}
+
+
+
+.b1 {
+  /*background-color: white; */
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  right: 0;
+  top: 0;
+  position: fixed;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.responsiveImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.a1 {
+  color: #756dbd;
+  text-decoration: none;
+}
+/* Add a black background color to the top navigation */
+
+.bckgrUrl {
+  max-width: 100%;
+  max-height: 100%;
+}

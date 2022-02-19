@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col--12">
+    <h2 class="h2Position">
+      <a class="backButton" routerLink="/doglist">Back</a>
+    </h2>
+    <ng-container class="container" *ngIf="dog$ | async as dog">
+      <h2 class="dogName">
+        {{ dog.name }}
+      </h2>
+
+      <p class="p1">{{ dog.temperament }}</p>
+
+      <p class="p1">{{ dog.origin }}</p>
+      <div *ngIf="image$ | async as image">
+        <img
+          class="image"
+          id="imagine"
+          [src]="image.url"
+          [style.width]="image.width"
+          [style.height]="image.height"
+        />
+      </div>
+    </ng-container>
+  </div>
+</div>

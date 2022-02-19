@@ -1,0 +1,30 @@
+<body class="b1">
+  <div class="topnav">
+    <h1 routerLink="" class="topNavText">DOG BREEDS</h1>
+  </div>
+  <ul id="test" *ngIf="dogs.length !== 0; else noDogs">
+    <ng-container *ngFor="let dog of dogs">
+      <h2 class="container">
+        <a class="a1" routerLink="/todo/{{ dog.id }}">
+          {{ dog.name }}
+        </a>
+      </h2>
+    </ng-container>
+  </ul>
+
+  <ng-template #noDogs>
+    <div class="center">
+      <img
+        class="responsiveImage"
+        src="https://media2.giphy.com/media/lLo0vQHigkMzGETtu/giphy.gif?cid=ecf05e47k80blqbjm1bwksyssq59itgr7lzybkup9u8y5dp9&rid=giphy.gif&ct=g"
+      />
+      <p class="p1">LOADING</p>
+    </div>
+  </ng-template>
+  <ng-container *ngIf="dog$ | async as dog">
+    <h2>
+      {{ dog.name }}
+    </h2>
+    <p>Dog Id: {{ dog.id }}</p>
+  </ng-container>
+</body>

@@ -1,0 +1,22 @@
+.dogName {
+  font-family: Display;
+  font-size: 35px;
+  color: #756dbd;
+}
+
+
+
+.p1 {
+  font-family: 'display';
+  font-size: 17px;
+  font: bold;
+  color: #756dbd;
+}
+
+
+.image {
+  float: center;
+  width: 50%;
+
+  background-size: cover;
+}
